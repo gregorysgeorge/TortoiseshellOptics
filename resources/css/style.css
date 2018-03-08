@@ -6,18 +6,24 @@ body {
     margin: 0 auto;
 }
 
-/* NAVBAR */
+/* HEADER */
 
 .nav {
     background-color: cadetblue;
-    width: 960px;
     display: flex;
-    align-items: center;    
-    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;    
     color: white;
+    width: 960px;
+    margin: 0 auto;
 }
 
     /*LOGO AND TITLE*/
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
 
     .logo img{
         display: flex;
@@ -25,23 +31,21 @@ body {
         padding: 1rem 0rem 1rem 2rem; 
     }
 
-    .title h3 {
+    .logo h3 {
+        display: flex;
         font-size: 1rem;
         padding: 1rem;
     }
 
     /*MENU*/
-    .navbar {
-        display: flex;
-        align-content: right;
-        justify-content: space-between;
-        margin-left: 12rem;
-        
-    }
+    
+
         .navbar span {
-            margin: 1rem 2rem;
+            margin-right: 2rem;
         }
 
+
+    
 /*MAIN BANNER*/
 
 .main-banner {
@@ -51,11 +55,13 @@ body {
     background-size: cover;
     padding-top: 1rem;
     height: 30rem;
+    max-width: 100%;
 }
+
     .headline {
         display: flex;
         justify-content: flex-end;
-        width: 1024px;
+        max-width: 1024px;
         margin: 10rem auto;
         
     }
@@ -69,6 +75,8 @@ body {
         }
 
 /*CONTENTS*/
+
+
     
 .services {
     display: flex;
@@ -137,7 +145,30 @@ footer {
             padding-left: 1rem;
         }
      
-    
+@media only screen and (max-width: 1024px){
 
+    .nav {
+        width: 100%;
+    }
+
+    .main-banner {
+        padding-top: 0;
+        height: 22rem;
+        }
+        
+        .headline {
+            padding: 0.75rem 4rem;
+            margin-top: 5rem;
+            margin-right: 2rem;
+        }
+
+        .headline h1 {
+            font-size: 1.33rem;
+        }
+    }
+
+
+
+    
 
 
